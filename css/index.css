@@ -202,7 +202,7 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding-left: 20px;
 }
 
@@ -310,11 +310,92 @@ body {
     border-radius: 10px;
 }
 
+#book-form input:focus {
+    border: 1px solid var(--green);
+}
+#book-form .date-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    width: 90%;
+    align-items: center;
+}
+#book-form #start-date {
+    background: transparent;
+    width: 50%;
+    color: #000;
+}
+
+#book-form #end-date {
+    background: transparent;
+    width: 50%;
+    color: #000;
+}
+#book-form #book-btn {
+    margin: 0.3rem auto;
+    display: inline;
+    border: none;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: 0.3s ease-in;
+    background: var(--blue);
+    color: #fff;
+}
+#book-form #book-btn:hover {
+    background: var(--green);
+    outline: none;
+    border: none;
+}
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* FOODS AND SERVICE*/
+.card .food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+.food .food-content {
+    padding: 0.5rem;
+}
+.food-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+.food-content #description {
+    color: #404040;
+    font-weight: 500;
+    line-height: 1.7rem;
+    font-size: 17px;
+    text-align: left;
+}
+
+/*  ABOUT SECTION  */
+.card .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about img {
+    width: 100%;
+}
+.about #description {
+    color: #535353;
+    font-weight: 500;
+    line-height: 1.7rem;
+    font-size: 17px;
+    text-align: left;
 }
 
 /* Footer */
@@ -324,6 +405,55 @@ body {
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+}
+/*  CLIENT AND POPULAR*/
+.card .client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem;
+}
+.client img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.client #description {
+    color: #535353;
+    font-weight: 500;
+    line-height: 1.7rem;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*  FOLLOW AND SOCIAL MEDIA  */
+
+.card .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+}
+.social a {
+    color: #09dcff;
+    outline: none;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 1px solid #32d7ff;
+    padding: 0.3rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    text-align: center;
+}
+.social a:hover {
+    background: rgb(0, 219, 204);
+    color: #fff;
+    transition: 0.3s ease-in;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -344,9 +474,15 @@ body {
     .mobile-nav {
         display: none;
     }
-    .rooms-- {
-        width: 90%;
+
+    .date-area {
+        width: 50%;
         padding: 1rem;
+    }
+    .client img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
     }
 }
 
@@ -411,5 +547,14 @@ body {
     }
     #book-form input {
         width: 90%;
+    }
+    #book-form #start-date {
+        background: transparent;
+        width: 100%;
+    }
+
+    #book-form #end-date {
+        background: transparent;
+        width: 100%;
     }
 }

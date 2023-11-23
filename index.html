@@ -88,52 +88,90 @@
                 <div class="card">
                     <h2>Book A Table</h2>
                     <form id="book-form">
-                        <input type="text" id="user-name" placeholder="Enter User Name" />
-                        <input type="email" id="user-email" placeholder="Enter User Email"/>
-                        <input type="telephone" id="user-phone" placeholder="Enter Phone Number"/>
-<select id="select-person">
-                <option>Select Person</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                       </select>
-                        <input type="date" id="start-date" placeholder="Select Start Date"/>
-                        <input type="date" id="end-date" placeholder="Select End Date"/>
+                        <input
+                            type="text"
+                            id="user-name"
+                            placeholder="Enter User Name"
+                        />
+                        <input
+                            type="email"
+                            id="user-email"
+                            placeholder="Enter User Email"
+                        />
+                        <input
+                            type="telephone"
+                            id="user-phone"
+                            placeholder="Enter Phone Number"
+                        />
+                        <select id="select-person">
+                            <option>Select Person</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <h3>Select A Specific Dates</h3>
+                        <div class="date-area">
+                            <input
+                                type="date"
+                                id="start-date"
+                                placeholder="Select Start Date"
+                            /><span>TO</span>
+                            <input
+                                type="date"
+                                id="end-date"
+                                placeholder="Select End Date"
+                            />
+                        </div>
+                        <button id="book-btn">Book Now</button>
                     </form>
                 </div>
                 <div class="card">
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeimg" style="height: 200px">Image</div>
-                    <p>Some text..</p>
-                    <p>
-                        Sunt in culpa qui officia deserunt mollit anim id est
-                        laborum consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco.
-                    </p>
+                    <h2>Foods And Dinner</h2>
+                    <div class="food">
+                        <div class="food-content">
+                            <img src="images/12.jpg" />
+                            <p id="description">
+                                Something to get all the favorite one of the
+                                favorite one of the favorite one of the favorite
+                                one of the favorite one of the favorite one of
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="rightcolumn">
                 <div class="card">
-                    <h2>About Me</h2>
-                    <div class="fakeimg" style="height: 100px">Image</div>
-                    <p>
-                        Some text about me in culpa qui officia deserunt mollit
-                        anim..
+                    <h2>About Us</h2>
+                    <div class="about">
+                        <img src="images/15.jpg" />
+                        <p id="description">
+                            Some text about me in culpa qui officia deserunt
+                            mollit anim..
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Our Clients</h2>
+                    <div class="client">
+                        <img src="images/ghs.png" />
+                        <p id="description">Ghs Julian</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Follow Us On</h2>
+                    <p id="description">
+                        she sounds like this is a ip address is it possible to
+                        run the server always without a kaj korte hobe is
                     </p>
-                </div>
-                <div class="card">
-                    <h3>Popular Post</h3>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                </div>
-                <div class="card">
-                    <h3>Follow Me</h3>
-                    <p>Some text..</p>
+                    <div class="social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-google"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,5 +180,6 @@
             <h2>Footer</h2>
         </div>
         <script src="js/index.js"></script>
+        <script type="module" src="js/book-table.js"></script>
     </body>
 </html>
